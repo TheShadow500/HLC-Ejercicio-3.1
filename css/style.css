@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Catamaran";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #216e98;
+}
+
+.contenedor{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    background-color: #a8bdc9;
+}
+
+header{
+    font-size: 48pt;
+    font-weight: bolder;
+}
+
+header img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.linea{
+    font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.lineaB{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tipoconversion{
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.error{
+    color: #d30000;
+    font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);
+}
+
+.separador{
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.campoI{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.campoD{
+    text-align: right;
+    width: 30%;
+}
+
+.campoR{
+    padding: 6px;
+    width: 15%;
+    text-align: right;
+}
+
+input{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 14pt;
+    padding: 7px;
+    width: 100px;
+}
+
+input[type="button"]{
+    font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);
+    width: 120px;
+    border-radius: 20px;
+}
+
+input[type="button"]:hover{
+    background-color: rgba(173, 121, 41, 0.897);
+}
+
+input[type="button"]:active{
+    border: 1px solid black;
+    color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0
+}
+
+select{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 14pt;
+    padding: 7px;
+}
+
+.resultado{
+    font-weight: normal;
+    font-size: clamp(1.5rem, 1.375rem + 0.4167vw, 1.875rem);
+    margin-bottom: 40px;
+}
+
+footer{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: clamp(0.875rem, 0.7917rem + 0.2778vw, 1.125rem);
+}
+
+@media (max-width: 1800px){
+    .campoI{
+        width: 20%;
+    }
+
+    .campoD{
+        width: 40%;
+    }
+
+    .campoR{
+        width: 20%;
+    }
+}
+
+@media (max-width: 1210px){
+    .linea{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campoI{
+        border-bottom: 2px solid;
+        background-color: #216e98;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .campoD{
+        margin: 0;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .campoR{
+        text-align: center;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .resultado{
+        text-align: center;
+    }
+}

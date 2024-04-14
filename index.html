@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HLC - Ejercicio 3.1 (Conversor de Divisas)</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header><img src="./img/logo.png"></header>
+        <main>
+            <!-- TIPO CONVERSION -->
+            <h1>VALOR ACTUAL</h1>
+            <div class="tipoconversion" id="tipoconversion"></div>
+
+            <!-- CONVERSION -->
+            <h1>CONVERSIÓN</h1>
+            <div class="linea">
+                <div class="campoI">Moneda</div>
+                <div class="campoD">
+                    <select name="moneda" id="moneda">
+                        <option value="dolares" selected>Dólares</option>
+                        <option value="libras">Libras</option>
+                        <option value="yenes">Yenes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="linea">
+                <div class="campoI">Cantidad</div>
+                <div class="campoD"><input type="number" id="cantidad" value="0"></div>
+            </div>
+            <div class="linea lineaB">
+                <input type="button" id="convertir" value="Convertir">
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="linea">
+                <div class="tipoconversion" id="resultado"></div>
+            </div>
+        </main>
+        <footer>
+            ©2024 HLC Ejercicio 3.1 (Conversor de Divisas)<br>Creado por Daniel Amores
+        </footer>
+    </div>
+</body>
+</html>
+<script src="./js/script.js"></script>
